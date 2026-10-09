@@ -8,70 +8,368 @@
 </head>
 
 <body>
-  <div class="grid grid-cols-2 ">
-    <div>
-      <img class="w-full h-auto" src="logo.png" alt="Keefer Law Firm Logo">
+  <header class="flex flex-col w-full md:flex-row">
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start  ">
+      <img class="w-full max-w-[500px] h-auto" src="logo.png" alt="Keefer Law Firm Logo">
     </div>
-    <div class="grid justify-items-end pt-2 pr-5">
-      <h1 class="text-red-800 text-3xl font-bold underline h-4">
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-end justify-center pr-0 md:pr-5 pb-4 md:pb-0">
+      <h1 class="text-red-800 text-2xl md:text-3xl font-bold underline ">
         CALL OUR OFFICES NOW!
       </h1>
-      <h4 class="text-[60px] font-semibold h-[60px]">540.433.6906</h4>
-      <p class="text-[24px] ">Get Your Questions Answered Fast</p>
+      <h4 class="text-[48px] font-semibold sm:text-[48px] md:text-[60px] leading-none">540.433.6906</h4>
+      <p class="text-[20px] md:text-[24px] ">Get Your Questions Answered Fast</p>
     </div>
-  </div>
+  </header>
   <!--  navagation section  -->
-  <div class="bg-red-900 h-[50px]">
-    <nav class="flex justify-end gap-[25px] text-[#e2dfdf] text-[24px] font-semibold p-2 mr-3">
-      <a href="#home" class="hover:bg-yellow-700 ">HOME</a>
-      <a href="#biography" class="hover:bg-yellow-700 ">BIOGRAPHY</a>
-      <a href="#blog" class="hover:bg-yellow-700 ">BLOG</a>
-      <a href="#areas" class="hover:bg-yellow-700 ">AREAS WE SERVE</a>
-      <a href="#library" class="hover:bg-yellow-700 ">LIBRARY</a>
-      <a href="#contact" class="hover:bg-yellow-700 ">CONTACT</a>
+  <div class="bg-red-900 min-h-12 min-w-full">
+    <nav
+      class="flex flex-wrap justify-center lg:justify-end items-center gap-3 md:gap-5 px-3 py-3 text-lg md:text-xl lg:text-2xl text-[#e2dfdf] font-semibold">
+      <a href="#home" class="hover:bg-yellow-700 cursor-point">HOME</a>
+      <a href="#biography" class="hover:bg-yellow-700 cursor-point ">BIOGRAPHY</a>
+      <a href="#blog" class="hover:bg-yellow-700 cursor-point ">BLOG</a>
+      <a href="#areas" class="hover:bg-yellow-700 cursor-point ">AREAS WE SERVE</a>
+      <a href="#library" class="hover:bg-yellow-700 cursor-point ">LIBRARY</a>
+      <a href="#contact" class="hover:bg-yellow-700 cursor-point ">CONTACT</a>
     </nav>
   </div>
   <!-- Middle section -->
-  <div class="grid grid-cols-2 gap-[25px] p-5">
-    <div><img src="gurantee_banner.gif" class="w-full h-[430px]"></div>
-    <div class="h-[430px] bg-[url('/form_bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <div class="flex justify-between ">
-        <h2 class="text-white pl-[10px] pt-[5px] text-3xl font-semibold bg-red-800 w-[210px] h-[50px]">QUESTIONS?</h2>
-        <h6 class="text-2xl font-semibold pr-[30px]">Have a <strong
-            class="text-4xl text-[#00008B]">Question</strong><br> About your Case ?</h6>
+  <section class="flex flex-col lg:flex-row gap-5 p-4 ">
+    <div class="w-full lg:w-[55%] flex items-center">
+      <img class="w-full h-auto lg:h-[430px] object-cover" src="gurantee_banner.gif">
+    </div>
+    <div
+      class="w-full lg:w-[45%] min-h-[620px] lg:min-h-[430px] bg-[url('/form_bg.jpg')] bg-cover bg-center bg-no-repeat overflow-hidden">
+      <div class="flex justify-between items-start">
+        <h2
+          class="text-white pt-1 text-2xl sm:text-3xl md:text-4xl font-semibold bg-red-800 w-[150px] sm:w-[180px] md:w-[220px] h-[40px] md:h-[45px]">
+          QUESTIONS?</h2>
+        <h6 class="text-xl sm:text-2xl font-semibold text-right pr-3 pt-1">Have a <span
+            class="text-[#00008B]">Question</span><br> About your Case ?</h6>
       </div>
-      <p class="text-[22px] pl-[50px]">Enter your information and get your questions answered quickly and discreetly or
+      <p class="text-[16px] sm:text-[18px] lg:text-[20px] px-5 py-3">Enter your information and get your questions
+        answered quickly and
+        discreetly or
         call us at:
-        <strong>540.433.6906</strong>
+        <span class="font-bold">540.433.6906</span>
       </p>
-      <div class="flex justify-between">
-        <div class="flex flex-col gap-[10px] ml-13 mt-5 ">
-          <div>
-            <label for="name">Name:</label>
-            <input class="border-1 h-[25px] w-[240px] bg-white" type="text" id="name" name="name"
+      <div class="flex flex-col sm:flex-row justify-between gap-5 px-5 mt-5">
+        <div class="flex flex-col gap-3 w-full sm:w-auto">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1">
+            <label for="name" class="w-[55px]">Name:</label>
+            <input class="border h-[30px] w-full sm:w-[240px] bg-white px-2" type="text" id="name" name="name"
               placeholder="Enter Your Name">
           </div>
-          <div>
-            <label for="email">Email:</label>
-            <input class="border-1 ml-[6px] h-[25px] w-[240px] bg-white" type="text" id="email" name="email"
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1">
+            <label for="email" class="w-[55px]">Email:</label>
+            <input class="border h-[30px] w-full sm:w-[240px] bg-white px-2" type="text" id="email" name="email"
               placeholder="Enter Your Email">
           </div>
-          <div>
-            <label for="phone">Phone:</label>
-            <input class="border-1 h-[25px] w-[240px] bg-white" type="text" id="phone" name="phone"
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1">
+            <label for="phone" class="w-[55px]">Phone:</label>
+            <input class="border h-[30px] w-full sm:w-[240px] bg-white px-2" type="text" id="phone" name="phone"
               placeholder="Enter Your Phone Number">
           </div>
         </div>
-        <div><img class="rotate-18 mr-15 mt-10" src="confidential.png"></div>
+        <div class="flex justify-center items-center">
+          <img class="w-[80px] sm:w-[120px] md:w-[170px] rotate-[18deg]" src="confidential.png">
+        </div>
       </div>
-      <div><textarea class="bg-white ml-14 w-[80%] mt-8 h-[50px]"
-          placeholder="Tell us about your case here..."></textarea></div>
-      <div class="flex justify-center  gap-5 my-5 mr-5">
-        <p class="text-[18px] pt-4"><i>100% Privacy Guaranteed</i></p>
-        <button class="flex bg-red-800 w-[47%] h-12 pt-2 pl-2 text-[20px] text-white" type="button">Ask Us About Your
-          Case <img class="size-5 my-2 ml-5" src="bullet_white.gif" alt=""></button>
+
+      <div class="px-5 mt-5">
+        <textarea class="bg-white border w-full h-[70px] resize-none px-2 py-2"
+          placeholder="Tell us about your case here..."></textarea>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 px-5 mt-5">
+        <p class="text-[15px] sm:text-[18px] lg:text-[16px]"><i>100% Privacy Guaranteed</i></p>
+        <button
+          class="flex items-center justify-center gap-3 bg-red-800 w-full sm:w-[275px] h-12 text-[16px] md:text-xl lg:text-[18px] text-white font-semibold"
+          type="button">Ask Us About Your
+          Case <img class="w-3 h-3" src="bullet_white.gif" alt=""></button>
       </div>
     </div>
+  </section>
+  <!-- Third Section -->
+  <section class="flex flex-col lg:flex-row lg:gap-1  px-4 mt-5">
+    <!-- left -->
+    <div class="w-full flex flex-col md:flex-row lg:flex-row lg:border-r">
+      <div class="w-full md:w-1/2 md:border-r lg:w-[40%] lg:border-r">
+
+        <h3 class="text-2xl font-bold">CHARGED WITH <span class="text-red-900">DUI?</span></h3>
+
+        <h4 class="text-[18px] font-semibold ">FREE CASE EVALUATION</h4>
+
+        <div class="flex justify-between gap-4 mt-2">
+          <div>
+
+            <p class="text-[16px] sm:text-[20px]">Being charged with a DUI can be scary. Get the help you deserve.
+            </p>
+
+            <p class="text-[16px] mt-2 sm:text-[20px]">Click here to let us know how we can help you with your case</p>
+          </div>
+
+          <div class="shrink-0">
+            <img class="w-[80px] h-[100px] md:w-[100px] md:h-[120px] object-contain" src="paste_board.gif">
+          </div>
+
+        </div>
+
+        <!-- button -->
+
+        <div class="flex justify-center mt-5">
+          <div class="border-t w-[200px] flex justify-center "><button
+              class="flex items-center justify-around bg-red-800 w-[140px] h-8 text-white" type="button">
+              CLICK HERE
+              <img class="w-3 h-3" src="bullet_white.gif" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <!-- middle -->
+      <div class="w-full border-t md:border-none md:w-1/2  lg:w-[50%]">
+        <!-- middle-uper -->
+        <div>
+
+          <div class="flex justify-between gap-4 mt-5 lg:mt-0 pt-5 ">
+
+            <div>
+              <h3 class="text-2xl font-bold">LAW <span class="text-red-900">BLOG</span></h3>
+              <p class="text-[18px] sm:text-[20px] mt-2">Learn more about Virginia Traffic LAWS</p>
+            </div>
+
+            <div class="shrink-0 mr-2"><img src="pic1.gif" alt="">
+            </div>
+
+          </div>
+          <!-- button -->
+          <div class="flex justify-center mt-5">
+
+            <div class="border-t w-[200px] flex justify-center">
+              <button class="flex items-center justify-around bg-red-800 w-[140px] h-8 text-white">
+                CLICK HERE
+                <img class="w-3 h-3" src="bullet_white.gif" alt="">
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- middle-down -->
+
+        <div class="mt-8">
+
+          <div class="flex justify-between gap-4 pt-5 border-t  ">
+
+            <div>
+              <h3 class="text-2xl font-bold">CASE <span class="text-red-900">RESULTS</span></h3>
+              <p class="text-[18px] sm:text-[20px] mt-2">See how we help our clients. Read our latest case results.
+              </p>
+            </div>
+            <div class="shrink-0 mr-2">
+
+              <img class="w-[140px] h-[100px] object-contain" src="./order_icon.gif" alt="">
+
+            </div>
+
+          </div>
+          <!-- button -->
+          <div class="flex justify-center mt-5">
+
+            <div class="border-t w-[200px] flex justify-center">
+              <button class="flex items-center justify-around bg-red-800 w-[140px] h-8 text-white" type="button">
+                CLICK HERE
+                <img class="w-3 h-3" src="bullet_white.gif" alt=""></button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Right -->
+    <div class="w-full md:w-full lg:gap-1 lg:w-[30%]">
+
+      <div class="border-t lg:border-none pt-5">
+
+        <div class="flex justify-center items-center gap-5">
+          <img class="w-[100px] h-[90px] object-contain" src="qqq.gif" alt="">
+          <img class="w-[100px] h-[90px] object-contain" src="national_college_small.gif" alt="">
+        </div>
+
+        <div class="flex flex-col items-center mt-4">
+          <h3 class="text-2xl font-bold">CERTIFICATES &<br><span class="text-red-900">CREDENTIALS</span></h3>
+          <p class="text-[18px] sm:text-[20px] mt-2">Keefer Law Firm has protected the rights of Virginians for
+            over 30 years</p>
+        </div>
+
+      </div>
+      <!-- button -->
+
+      <div class="flex justify-center mt-5">
+        <div class="border-t w-[200px] flex justify-center">
+          <button class="flex items-center justify-around bg-red-800 w-[140px] h-8 text-white" type="button">
+            CLICK HERE
+            <img class="w-3 h-3" src="bullet_white.gif" alt="">
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- underline -->
+  <div class="w-full px-4 mt-8">
+    <img class="w-full h-auto" src="./hr_shadow.png" alt="">
+  </div>
+  <!-- fourth Section -->
+  <section class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap">
+    <!-- third-left -->
+    <div class="flex flex-col gap-5 w-full md:basis-[40%] lg:basis-1/4">
+      <div class="flex justify-center">
+        <h4 class="text-3xl font-semibold">PRACTICE <span class="text-red-900">AREAS</span></h4>
+      </div>
+      <div class="flex flex-row w-full h-auto  bg-[#887e7e]">
+        <div>
+          <img class="w-2" src="menu_bg.gif" alt="">
+        </div>
+        <div class="w-full flex flex-col gap-5">
+          <div class="w-full">
+            <h6 class="text-2xl text-white font-bold">DUI & DWI</h6>
+          </div>
+          <div class="w-full flex justify-end ">
+            <button class="flex text-xl text-white gap-3" type="button">
+              LEARN MORE
+              <img class="w-5 h-5 mt-1" src="bullet_red.gif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-row w-full h-auto  bg-[#887e7e]">
+        <div>
+          <img class="w-2" src="menu_bg.gif" alt="">
+        </div>
+        <div class="w-full flex flex-col gap-5">
+          <div class="w-full">
+            <h6 class="text-2xl text-white font-bold">RECKLESS DRIVING</h6>
+          </div>
+          <div class="w-full flex justify-end ">
+            <button class="flex text-xl text-white gap-3" type="button">
+              LEARN MORE
+              <img class="w-5 h-5 mt-1" src="bullet_red.gif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-row w-full h-auto  bg-[#887e7e]">
+        <div>
+          <img class="w-2" src="menu_bg.gif" alt="">
+        </div>
+        <div class="w-full flex flex-col gap-5">
+          <div class="w-full">
+            <h6 class="text-2xl text-white font-bold">SPEEDING TICKETS</h6>
+          </div>
+          <div class="w-full flex justify-end ">
+            <button class="flex text-xl text-white gap-3" type="button">
+              LEARN MORE
+              <img class="w-5 h-5 mt-1" src="bullet_red.gif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-row w-full h-auto  bg-[#887e7e]">
+        <div>
+          <img class="w-2" src="menu_bg.gif" alt="">
+        </div>
+        <div class="w-full flex flex-col gap-5">
+          <div class="w-full">
+            <h6 class="text-2xl text-white font-bold">TRAFFIC VIOLATION</h6>
+          </div>
+          <div class="w-full flex justify-end ">
+            <button class="flex text-xl text-white gap-3" type="button">
+              LEARN MORE
+              <img class="w-5 h-5 mt-1" src="bullet_red.gif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <h3 class="text-3xl font-semibold">LEARN <span class="text-red-900">MORE</span> ABOUT</h3>
+      </div>
+    </div>
+    <!-- middle -->
+    <div class="flex flex-col items-center p-2 w-full md:basis-1/2  lg:basis-1/2">
+      <h1 class="text-3xl">PAGE TITLE HERE</h1>
+      <p class="p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores unde voluptatum ab
+        molestias numquam provident et itaque nobis veritatis, fugiat sapiente culpa natus magnam possimus
+        blanditiis ducimus. Maiores eos nisi, voluptate quo dolores distinctio sapiente temporibus
+        perferendis nam reprehenderit, laborum voluptatiburem, unde nesciunt illo magni ex excepturi optio
+        laboriosam eos vero sequi reiciendis autem. Nesciunt molestias rep</p>
+    </div>
+    <!-- right-section -->
+
+    <div class="flex flex-col gap-5 w-full  md:basis-full lg:basis-1/4">
+      <div class="md:flex mt-5 lg:flex-col ">
+        <div class="flex flex-col items-center md:w-1/2 lg:w-full">
+          <h2 class="text-2xl font-semibold">CLIENT<br><span class="text-red-900">TESTIMONIALS</span></h2>
+          <p class="text-[20px]">Read what others say about Keefer Law Firm.</p>
+          <div class="w-1/2 flex justify-center border-t mt-5">
+            <button class="flex items-center gap-3 bg-red-800 text-white px-2" type="button">
+              Click Here
+              <img class="w-3 h-3 mr-2" src="bullet_white.gif" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center mt-4 md:w-1/2 lg:w-full">
+          <h2 class="text-2xl font-semibold">DOWNLOAD<br><span class="text-red-900">FREE</span>REPORTS</h2>
+          <p class="text-[20px]">Discover the truth about Virginia Law.</p>
+          <div class="w-1/2 flex justify-center border-t mt-5">
+            <button class="flex items-center gap-3 bg-red-800 text-white px-2" type="button">
+              Click Here
+              <img class="w-3 h-3 mr-2" src="bullet_white.gif" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <h2 class="text-2xl font-semibold">CONTACT<br><span class="text-red-900">OUR</span>OFFICES</h2>
+        <p class="text-[20px]">Get your question answered right now.</p>
+        <div class="w-1/2 flex justify-center border-t mt-5">
+          <button class="flex items-center gap-3 bg-red-800 text-white px-2" type="button">
+            Click Here
+            <img class="w-3 h-3 mr-2" src="bullet_white.gif" alt="">
+          </button>
+        </div>
+      </div>
+
+
+      <div class="flex justify-center gap-5 m-10">
+        <div><img src="avo_rating_large.gif" alt=""></div>
+        <div><img src="national_college_large.gif" alt=""></div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h2 class="text-2xl font-semibold">FOLLOW <span class="text-red-900">US</span></h2>
+        <div class="w-1/2 flex justify-center gap-4 border-t m-5 p-4">
+          <img src="fb_icon.gif" alt="FB">
+          <img src="google_icon.gif" alt="Google">
+          <img src="twitter_icon.gif" alt="Twitter">
+          <img src="linked_icon.gif" alt="LinkedIn">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="w-full h-5 bg-red-900"></div>
+  </footer>
+
 </body>
 
 </html>
